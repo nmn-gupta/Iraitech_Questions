@@ -1,0 +1,18 @@
+x=eval(input())
+n=eval(input())
+
+def solution_by_iteration(x,n):
+    s=0
+    for i in range(1,n+1):
+        s+=(1/(x**i))
+    return s
+    
+print("Output by Iteration: ", solution_by_iteration(x,n))
+
+def solution_by_recursion(x,n):
+    if n==1:
+        return 1/x
+    return (1/(x**n))+solution_by_recursion(x,n-1)
+
+print("Output by Recursion: ", solution_by_recursion(x,n))
+
