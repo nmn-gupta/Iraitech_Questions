@@ -50,6 +50,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Question04.urls'
 
+AUTH_USER_MODEL = 'CustomUser.CustomUser'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
