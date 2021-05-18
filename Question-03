@@ -1,0 +1,12 @@
+def solve_equation(x,y,a,b):
+    s=(((x+(1/y))**a)*((x-(1/y))**b))/(((y+(1/x))**a)*((y-(1/x))**b))
+    return s
+
+x=eval(input())
+y=eval(input())
+a=eval(input())
+b=eval(input())
+
+print("Output is: ", solve_equation(x,y,a,b))
+
+
